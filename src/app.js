@@ -19,17 +19,7 @@ let generateExcuse = () => {
   let thingIndex = Math.floor(Math.random() * thing.length);
   let whereIndex = Math.floor(Math.random() * where.length);
 
-  return String(
-    pronoun[proIndex] +
-      " " +
-      subject[subIndex] +
-      " " +
-      action[actIndex] +
-      " " +
-      thing[thingIndex] +
-      " " +
-      where[whereIndex]
-  );
+  return `${pronoun[proIndex]} ${subject[subIndex]} ${action[actIndex]} ${thing[thingIndex]} ${where[whereIndex]}`;
 };
 
 window.onload = () => {
